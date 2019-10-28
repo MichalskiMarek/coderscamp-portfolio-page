@@ -2,153 +2,168 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Portfolio</title>
 </head>
 
 <body>
-    <nav class="menu">
-        <ul class="menu__list">
-            <li class="menu__item menu__item--logo">DEV</li>
-            <li class="menu__item">About me</li>
-            <li class="menu__item">Skills</li>
-            <li class="menu__item">Portfolio</li>
-            <li class="menu__item">Contact</li>
-        </ul>
-    </nav>
-    <header class="header">
-        <div class="header__title">
-            <div class="header__welcome">Welcome!</div>
-            <h1 class="header__name">My name is Marek</h1>
-        </div>
-        <ul class="header__social">
-            <li class="header__icon">tw</li>
-            <li class="header__icon">in</li>
-            <li class="header__icon">git</li>
-            <li class="header__icon">fb</li>
-        </ul>
-    </header>
-    <div class="contact-me">
-        <h2 class="contact-me__title">I am happy to help you with any problem</h2>
-        <button class="contact-me__btn">Contact me!</button>
-        <button class="contact-me__btn">Check my CV</button>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__item menu__item--logo">
+        <a class="menu__link menu__link--logo" href="/">
+          <img class="menu_logo" src="./images/logo.svg" alt="logo" />
+          <span class="menu__logo-text">DEV</span>
+        </a>
+      </li>
+      <li class="menu__item"><a class="menu__link" href="/">About me</a></li>
+      <li class="menu__item"><a class="menu__link" href="/">Skills</a></li>
+      <li class="menu__item"><a class="menu__link" href="/">Portfolio</a></li>
+      <li class="menu__item"><a class="menu__link" href="/">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="page-header">
+    <div class="page-header__title">
+      <div class="page-header__welcome">Welcome!</div>
+      <h1 class="page-header__name">My name is Marek</h1>
     </div>
-    <section class="about">
-        <h2 class="about__title">About me</h2>
-        <div class="about__container">
-            <img class="about__image" src="" alt="">
-            <ul class="about__list">
-                <li class="about__item">
-                    <spam class="about__span">Full name:</spam>
-                    <spam class="about__span about__span--orange">Marek Michalski</spam>
-                </li>
-                <li class="about__item">
-                    <spam class="about__span">Age:</spam>
-                    <spam class="about__span about__span--orange">30 years</spam>
-                </li>
-                <li class="about__item">
-                    <spam class="about__span">Profile:</spam>
-                    <spam class="about__span about__span--orange">Fullstack</spam>
-                </li>
-                <li class="about__item">
-                    <spam class="about__span">Telephone:</spam>
-                    <spam class="about__span about__span--orange">+48 787 207 044</spam>
-                </li>
-                <li class="about__item">
-                    <spam class="about__span">E-mail:</spam>
-                    <spam class="about__span about__span--orange">michalskimarek89@gmail.com</spam>
-                </li>
-            </ul>
-            <div class="about__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. ex ea commodo consequat.
-            </div>
+    <ul class="page-header__social">
+      <li class="page-header__icon">
+        <a class="page-header__link page-header__link--twitter" href="https://twitter.com"></a>
+      </li>
+      <li class="page-header__icon">
+        <a class="page-header__link page-header__link--linkedin" href="https://linkedin.com"></a>
+      </li>
+      <li class="page-header__icon">
+        <a class="page-header__link page-header__link--github" href="https://github.com"></a>
+      </li>
+      <li class="page-header__icon">
+        <a class="page-header__link page-header__link--facebook" href="https://facebook.com"></a>
+      </li>
+    </ul>
+  </header>
+  <section class="contact-me">
+    <h2 class="contact-me__title">I am happy to help you with any problem</h2>
+    <button class="contact-me__btn">Contact me!</button>
+    <button class="contact-me__btn">Check my CV</button>
+  </section>
+  <section class="about-me">
+    <h2 class="about-me__title">About me</h2>
+    <div class="about-me__container">
+      <img class="about-me__image" src="" alt="" />
+      <ul class="about-me__list">
+        <li class="about-me__item">
+          <spam class="about-me__span">Full name:</spam>
+          <spam class="about-me__span about__span--orange">Marek Michalski</spam>
+        </li>
+        <li class="about-me__item">
+          <spam class="about-me__span">Age:</spam>
+          <spam class="about-me__span about__span--orange">30 years</spam>
+        </li>
+        <li class="about-me__item">
+          <spam class="about-me__span">Profile:</spam>
+          <spam class="about-me__span about__span--orange">Fullstack</spam>
+        </li>
+        <li class="about-me__item">
+          <spam class="about-me__span">Telephone:</spam>
+          <spam class="about-me__span about__span--orange">+48 787 207 044</spam>
+        </li>
+        <li class="about-me__item">
+          <spam class="about-me__span">E-mail:</spam>
+          <spam class="about-me__span about__span--orange">michalskimarek89@gmail.com</spam>
+        </li>
+      </ul>
+      <div class="about-me__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. ex ea commodo consequat.
+      </div>
+    </div>
+  </section>
+  <section class="skills">
+    <h2 class="skills__title">Skills</h2>
+    <ul class="skills__list">
+      <li class="skills__item">
+        <img class="skills__image" src="" alt="" />
+        <span class="skills__span skills__span--orange">UX/UI</span><span class="skills__span">Figma</span>
+      </li>
+      <li>
+        <img class="skills__image" src="" alt="" />
+        <span class="skills__span skills__span--orange">Front End</span><span class="skills__span">Htlm, CSS,
+          JavaScript</span>
+      </li>
+      <li>
+        <img class="skills__image" src="" alt="" />
+        <span class="skills__span skills__span--orange">Back End</span><span class="skills__span">PHP, Node.js</span>
+      </li>
+    </ul>
+  </section>
+  <section class="portfolio">
+    <h2 class="portfolio__title">Portfolio</h2>
+    <div class="portfolio__container">
+      <div class="tile">
+        <h3 class="tile__title">Design</h3>
+        <div class="tile__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed
+          consequatur ut molestiae, porro nulla facere nesciunt quasi quae?
         </div>
-    </section>
-    <section class="skills">
-        <h2 class="skills__title">Skills</h2>
-        <ul class="skills__list">
-            <li class="skills__item">
-                <img class="skills__image" src="" alt="">
-                <span class="skills__span skills__span--orange">UX/UI</span><span class="skills__span">Figma</span>
-            </li>
-            <li>
-                <img class="skills__image" src="" alt="">
-                <span class="skills__span skills__span--orange">Front End</span><span class="skills__span">Htlm, CSS,
-                    JavaScript</span>
-            </li>
-            <li>
-                <img class="skills__image" src="" alt="">
-                <span class="skills__span skills__span--orange">Back End</span><span class="skills__span">PHP,
-                    Node.js</span>
-            </li>
-        </ul>
-    </section>
-    <section class="portfolio">
-        <h2 class="portfolio__title">Portfolio</h2>
-        <div class="portfolio__container">
-            <div class="tile">
-                <h3 class="tile__title">Design</h3>
-                <div class="tile__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed consequatur ut molestiae, porro
-                    nulla facere nesciunt quasi quae?
-                </div>
-                <button class="tile__btn">View</button>
-            </div>
-            <div class="tile"></div>
-            <div class="tile"></div>
-            <div class="tile"></div>
-            <div class="tile">
-                <h3 class="tile__title">Design project</h3>
-                <div class="tile__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sint! Sit, voluptates? Ex tenetur
-                    expedita cum quam.
-                </div>
-                <button class="tile__btn">View</button>
-            </div>
+        <button class="tile__btn">View</button>
+      </div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile">
+        <h3 class="tile__title">Design project</h3>
+        <div class="tile__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+          sint! Sit, voluptates? Ex tenetur expedita cum quam.
         </div>
-    </section>
-    <section class="contact">
-        <h2 class="contact__title">Contact us</h2>
-        <div class="contact__info">
-            <div class="contact__envelope">Envelope icon</div>
-            <div class="contact__text">
-                Please describe your question. Send me a message and I will answer you as soon as possible!
-            </div>
-            <ul class="contact__social">
-                <li class="contact__icon">tw</li>
-                <li class="contact__icon">in</li>
-                <li class="contact__icon">git</li>
-                <li class="contact__icon">fb</li>
-            </ul>
-            <div class="contact__adress">
-                <span class="contact__span contact-form__span--name">Marek Michalski</span>
-                <span class="contact__span contact-form__span--city">Poland, Poznań</span>
-                <span class="contact__span">ul. Losowa 13/9 11-111</span>
-                <spam class="contact__span">+48 787 207 044</spam>
-                <spam class="contact__span">michalskimarek89@gmail.com</spam>
-            </div>
-        </div>
-        <div class="form-container">
-            <h2 class="form-container__title">Let's start!</h2>
-            <form class="form-container__form" action="">
-                <input class="form-container__input" type="text">
-                <input class="form-container__input" type="email" name="" id="">
-                <input class="form-container__input" type="text">
-                <textarea class="form-container__input form-container__input--textarea" name="" id="" cols="30"
-                    rows="10"></textarea>
-                <button class="form-container__btn">Send</button>
-            </form>
-        </div>
-    </section>
-    <footer class="footer">
-        Copyright &copy; 2019 CodersCrew
-    </footer>
+        <button class="tile__btn">View</button>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <h2 class="contact__title">Contact us</h2>
+    <div class="contact__info">
+      <div class="contact__envelope">Envelope icon</div>
+      <div class="contact__text">
+        Please describe your question. Send me a message and I will answer you
+        as soon as possible!
+      </div>
+      <ul class="contact__social">
+        <li class="contact__icon">tw</li>
+        <li class="contact__icon">in</li>
+        <li class="contact__icon">git</li>
+        <li class="contact__icon">fb</li>
+      </ul>
+      <div class="contact__adress">
+        <span class="contact__span contact-form__span--name">Marek Michalski</span>
+        <span class="contact__span contact-form__span--city">Poland, Poznań</span>
+        <span class="contact__span">ul. Losowa 13/9 11-111</span>
+        <spam class="contact__span">+48 787 207 044</spam>
+        <spam class="contact__span">michalskimarek89@gmail.com</spam>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h2 class="contact-form__title">Let's start!</h2>
+      <form class="contact-form__form" action="">
+        <input class="contact-form__input" type="text" />
+        <input class="contact-form__input" type="email" name="" id="" />
+        <input class="contact-form__input" type="text" />
+        <textarea class="contact-form__input contact-form__input--textarea  " name="" id="" cols="30"
+          rows="10"></textarea>
+        <button class="contact-form__btn">Send</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    Copyright &copy; 2019 CodersCrew
+  </footer>
 </body>
 
 </html>
