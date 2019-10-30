@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
 
 .menu {
-    width: 100vw;
+    max-width: 100vw;
     color: #515151;
     margin-bottom: 27px;
 
@@ -51,7 +51,7 @@
 .page-header {
     display: flex;
     flex-direction: column;
-    background-image: url('/images/header-bg.svg'), url('/images/header-bg-layer.svg');
+    background-image: url("../images/cover-photo.png"), url("../images/cover-layer.png");
     height: 585px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -87,11 +87,92 @@
     &__link {
         width: 25px;
         height: 25px;
+        background-color: #FFFFFF;
+        display: inline-block;
+        margin: 28px 12.5px;
+        border-radius: 50%;
+        position: relative;
+
+        &--github {
+            background-color: transparent;
+        }
+    }
+
+    &__img {
 
         &--twitter {
-            background-image: url('/images/twitter-brands.svg');
-            background-position: center center;
-            background-size: cover;
+            width: 15.39px;
+            height: 12.5px;
+            position: absolute;
+            top: 6.5px;
+            left: 5px;
+        }
+
+        &--linkedin {
+            width: 12.5px;
+            height: 12.5px;
+            position: absolute;
+            top: 5.5px;
+            left: 7px;
+        }
+
+        &--github {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &--facebook {
+            width: 8.59px;
+            height: 16.67px;
+            position: absolute;
+            top: 4.5px;
+            left: 8px;
+        }
+    }
+}
+
+.contact-me {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.02em;
+        color: #222222;
+        margin-top: 28px;
+        margin-bottom: 36px;
+    }
+
+    &__buttons {
+        display: flex;
+    }
+
+    &__btn {
+        width: 200px;
+        height: 50px;
+        margin: 0 40px;
+        background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+        border-radius: 15px;
+        cursor: pointer;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        border: none;
+
+        &:hover {
+            background: #FFFFFF;
+            border: 1px solid #FFC53D;
+            border-radius: 15px;
+            color: #FFC53D;
         }
     }
 }
