@@ -1,178 +1,259 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 .menu {
-    max-width: 100vw;
+  max-width: 100vw;
+  color: #515151;
+  margin-bottom: 27px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    list-style-type: none;
+    margin-right: 49px;
+    margin-top: 48px;
+
+    &--logo {
+      margin-right: auto;
+      margin-left: 40px;
+    }
+  }
+
+  &__logo-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.15em;
+  }
+
+  &__link {
     color: #515151;
-    margin-bottom: 27px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
 
-    &__list {
-        display: flex;
+    &--logo {
+      width: 110px;
+      display: flex;
+      justify-content: space-between;
     }
-
-    &__item {
-        list-style-type: none;
-        margin-right: 49px;
-        margin-top: 48px;
-
-        &--logo {
-            margin-right: auto;
-            margin-left: 40px;
-        }
-    }
-
-    &__logo-text {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.15em;
-    }
-
-    &__link {
-        color: #515151;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 0.02em;
-
-        &--logo {
-            width: 110px;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
+  }
 }
 
 .page-header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/cover-photo.png"),
+    url("../images/cover-layer.png");
+  height: 585px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+
+  &__welcome {
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 117px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffc53d;
+    mix-blend-mode: normal;
+    margin-top: 77px;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
+  &__social {
     display: flex;
-    flex-direction: column;
-    background-image: url("../images/cover-photo.png"), url("../images/cover-layer.png");
-    height: 585px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: lighten;
+    list-style-type: none;
+    justify-content: center;
+  }
 
-    &__welcome {
-        font-weight: bold;
-        font-size: 100px;
-        line-height: 117px;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #FFC53D;
-        mix-blend-mode: normal;
-        margin-top: 77px;
+  &__link {
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 28px 12.5px;
+    border-radius: 50%;
+    position: relative;
+
+    &--github {
+      background-color: transparent;
+    }
+  }
+
+  &__img {
+    &--twitter {
+      width: 15.39px;
+      height: 12.5px;
+      position: absolute;
+      top: 6.5px;
+      left: 5px;
     }
 
-    &__name {
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
+    &--linkedin {
+      width: 12.5px;
+      height: 12.5px;
+      position: absolute;
+      top: 5.5px;
+      left: 7px;
     }
 
-    &__social {
-        display: flex;
-        list-style-type: none;
-        justify-content: center;
+    &--github {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
-    &__link {
-        width: 25px;
-        height: 25px;
-        background-color: #FFFFFF;
-        display: inline-block;
-        margin: 28px 12.5px;
-        border-radius: 50%;
-        position: relative;
-
-        &--github {
-            background-color: transparent;
-        }
+    &--facebook {
+      width: 8.59px;
+      height: 16.67px;
+      position: absolute;
+      top: 4.5px;
+      left: 8px;
     }
-
-    &__img {
-
-        &--twitter {
-            width: 15.39px;
-            height: 12.5px;
-            position: absolute;
-            top: 6.5px;
-            left: 5px;
-        }
-
-        &--linkedin {
-            width: 12.5px;
-            height: 12.5px;
-            position: absolute;
-            top: 5.5px;
-            left: 7px;
-        }
-
-        &--github {
-            width: 25px;
-            height: 25px;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        &--facebook {
-            width: 8.59px;
-            height: 16.67px;
-            position: absolute;
-            top: 4.5px;
-            left: 8px;
-        }
-    }
+  }
 }
 
 .contact-me {
-    height: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    color: #222222;
+    margin-top: 28px;
+    margin-bottom: 36px;
+  }
+
+  &__buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+  }
 
-    &__title {
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 42px;
-        letter-spacing: 0.02em;
-        color: #222222;
-        margin-top: 28px;
-        margin-bottom: 36px;
+  &__btn {
+    width: 200px;
+    height: 50px;
+    margin: 0 40px;
+    background: linear-gradient(270deg, #ffc53d 14%, #ff9a3d 68.5%);
+    border-radius: 15px;
+    cursor: pointer;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    border: none;
+
+    &:hover {
+      background: #ffffff;
+      border: 1px solid #ffc53d;
+      border-radius: 15px;
+      color: #ffc53d;
     }
+  }
+}
+.about-me {
+  position: relative;
+  &__title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
 
-    &__buttons {
-        display: flex;
+    color: #222222;
+
+    position: absolute;
+    top: -55px;
+    left: 150px;
+  }
+
+  &__container {
+    display: flex;
+    width: 86vw;
+    margin: 75px auto 75px auto;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -75px;
+      left: -9%;
+      height: calc(100% + 150px);
+      width: 68%;
+      background-color: #fafaff;
+      z-index: -1;
     }
+  }
 
-    &__btn {
-        width: 200px;
-        height: 50px;
-        margin: 0 40px;
-        background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
-        border-radius: 15px;
-        cursor: pointer;
-        color: #FFFFFF;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 21px;
-        border: none;
+  &__container {
+    display: flex;
+  }
 
-        &:hover {
-            background: #FFFFFF;
-            border: 1px solid #FFC53D;
-            border-radius: 15px;
-            color: #FFC53D;
-        }
+  &__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 50px 50px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 50px 0;
+  }
+
+  &__span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 160.86%;
+    letter-spacing: 0.02em;
+
+    &--orange {
+      color: #ffc53d;
     }
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 172.35%;
+    letter-spacing: 0.04em;
+    margin: 50px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -25px;
+      height: 100%;
+      border-left: 4px dashed #ffc53d;
+    }
+  }
 }
