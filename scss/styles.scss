@@ -185,9 +185,7 @@
     font-size: 32px;
     line-height: 37px;
     letter-spacing: 0.02em;
-
     color: #222222;
-
     position: absolute;
     top: -55px;
     left: 150px;
@@ -254,6 +252,71 @@
       left: -25px;
       height: 100%;
       border-left: 4px dashed #ffc53d;
+    }
+  }
+}
+
+.skills {
+  display: flex;
+  width: 86vw;
+  margin: 75px auto 75px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  position: relative;
+  margin-top: 207px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -75px;
+    right: -9%;
+    height: calc(100% + 150px);
+    width: 80%;
+    background-color: #fafaff;
+    z-index: -1;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #222222;
+    position: absolute;
+    top: -55px;
+    left: 34%;
+  }
+
+  &__list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin: 38px 0 50px 0;
+    width: 33%;
+
+    &--middle {
+      border-left: 4px dashed #ffc53d;
+      border-right: 4px dashed #ffc53d;
+    }
+  }
+
+  &__span {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+
+    &--orange {
+      font-weight: bold;
+      color: #ffc53d;
+      margin: 46px 0 13px 0;
     }
   }
 }
