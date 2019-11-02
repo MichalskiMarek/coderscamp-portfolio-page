@@ -178,6 +178,7 @@
 }
 .about-me {
   position: relative;
+
   &__title {
     font-family: Ubuntu;
     font-style: normal;
@@ -259,17 +260,16 @@
 .skills {
   display: flex;
   width: 86vw;
-  margin: 75px auto 75px auto;
+  margin: 207px auto 75px auto;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
   position: relative;
-  margin-top: 207px;
 
   &::after {
     content: "";
     position: absolute;
     top: -75px;
-    right: -9%;
+    right: -7.53%;
     height: calc(100% + 150px);
     width: 80%;
     background-color: #fafaff;
@@ -317,6 +317,122 @@
       font-weight: bold;
       color: #ffc53d;
       margin: 46px 0 13px 0;
+    }
+  }
+}
+
+.portfolio {
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #222222;
+    margin: 120px 0 22px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .tile {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 350px;
+      min-width: 390px;
+
+      &__overlay {
+        padding: 35px;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(34, 34, 34, 0.5) 0%,
+          rgba(255, 154, 61, 0.5) 100%
+        );
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 1;
+          .tile__title,
+          .tile__text,
+          .tile__btn {
+            visibility: visible;
+          }
+        }
+      }
+
+      &--first {
+        background-image: url("../images/tile1.png");
+        width: 530px;
+      }
+
+      &--second {
+        background-image: url("../images/tile2.png");
+        width: 390px;
+      }
+
+      &--third {
+        background-image: url("../images/tile3.png");
+        width: 518px;
+      }
+
+      &--fourth {
+        background-image: url("../images/tile4.png");
+        width: 392px;
+      }
+
+      &--fifth {
+        background-image: url("../images/tile5.png");
+        width: 1049px;
+      }
+
+      &__title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        visibility: hidden;
+      }
+
+      &__text {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        visibility: hidden;
+      }
+
+      &__btn {
+        width: 100px;
+        height: 50px;
+        margin: 58px 0 0 0;
+        background: linear-gradient(270deg, #ffc53d 14%, #ff9a3d 68.5%);
+        border-radius: 15px;
+        cursor: pointer;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        border: none;
+        visibility: hidden;
+      }
     }
   }
 }
