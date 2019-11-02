@@ -85,7 +85,8 @@
     justify-content: center;
   }
 
-  &__link {
+  &__link,
+  .contact__link {
     width: 25px;
     height: 25px;
     background-color: #ffffff;
@@ -94,12 +95,14 @@
     border-radius: 50%;
     position: relative;
 
-    &--github {
+    &--github,
+    .contact__link--github {
       background-color: transparent;
     }
   }
 
-  &__img {
+  &__img,
+  .contact__img {
     &--twitter {
       width: 15.39px;
       height: 12.5px;
@@ -108,7 +111,8 @@
       left: 5px;
     }
 
-    &--linkedin {
+    &--linkedin,
+    .contact__img--linkedin {
       width: 12.5px;
       height: 12.5px;
       position: absolute;
@@ -116,7 +120,8 @@
       left: 7px;
     }
 
-    &--github {
+    &--github,
+    .contact__img--github {
       width: 25px;
       height: 25px;
       position: absolute;
@@ -124,7 +129,8 @@
       left: 0;
     }
 
-    &--facebook {
+    &--facebook,
+    .contact__img--facebook {
       width: 8.59px;
       height: 16.67px;
       position: absolute;
@@ -322,6 +328,7 @@
 }
 
 .portfolio {
+  margin-bottom: 72px;
   &__title {
     font-weight: bold;
     font-size: 32px;
@@ -434,5 +441,139 @@
         visibility: hidden;
       }
     }
+  }
+}
+.contact {
+  width: 100%;
+  background-color: #fafaff;
+  position: relative;
+  padding: 1px 0 1px 0;
+
+  &__title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: #222222;
+    position: absolute;
+    top: -55px;
+    left: 55px;
+  }
+
+  &__container {
+    width: 86vw;
+    background-color: #ffffff;
+    margin: 74px auto 90px auto;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+  }
+
+  &__envelope {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    width: 75%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 172.35%;
+    letter-spacing: 0.04em;
+    margin-bottom: 206px;
+  }
+
+  &__social {
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__info {
+    width: 35%;
+    background-color: #ff9a3d;
+    color: #ffffff;
+    padding: 36px 0 36px 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      right: -17px;
+      width: 35px;
+      height: 35px;
+      transform: rotate(45deg);
+      background-color: #ff9a3d;
+    }
+  }
+
+  &__link {
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 0 25px 9px 0;
+    border-radius: 50%;
+    position: relative;
+
+    &--github {
+      background-color: transparent;
+    }
+  }
+
+  &__img {
+    &--twitter {
+      width: 15.39px;
+      height: 12.5px;
+      position: absolute;
+      top: 6.5px;
+      left: 5px;
+    }
+
+    &--linkedin {
+      width: 12.5px;
+      height: 12.5px;
+      position: absolute;
+      top: 5.5px;
+      left: 7px;
+    }
+
+    &--github {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &--facebook {
+      width: 8.59px;
+      height: 16.67px;
+      position: absolute;
+      top: 4.5px;
+      left: 8px;
+    }
+  }
+
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+  }
+  &__span--name,
+  &__span--city {
+    font-weight: bold;
   }
 }

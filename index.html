@@ -172,38 +172,53 @@
     </div>
   </section>
   <section class="contact">
-    <h2 class="contact__title">Contact us</h2>
-    <div class="contact__info">
-      <div class="contact__envelope">Envelope icon</div>
-      <div class="contact__text">
-        Please describe your question. Send me a message and I will answer you
-        as soon as possible!
+    <div class="contact__container">
+      <div class="contact__info">
+        <h2 class="contact__title">Contact us</h2>
+        <img class="contact__envelope" src="./images/logo_message.svg" alt="envelope icon">
+        <div class="contact__text">
+          Please describe your question. Send me a message and I will answer you
+          as soon as possible!
+        </div>
+        <ul class="contact__social">
+          <li class="contact__icon">
+            <a class="contact__link" href="https://twitter.com"><img class="contact__img contact__img--twitter"
+                src="./images/twitter-brands.svg" alt="twitter logo"></a>
+          </li>
+          <li class="contact__icon">
+            <a class="contact__link" href="https://linkedin.com"><img class="contact__img contact__img--linkedin"
+                src="./images/linkedin-in-brands.svg" alt="linkedin logo"></a>
+          </li>
+          <li class="contact__icon">
+            <a class="contact__link contact__link--github" href="https://github.com"><img
+                class="contact__img contact__img--github" src="./images/github-brands.svg" alt="github logo"></a>
+          </li>
+          <li class="contact__icon">
+            <a class="contact__link" href="https://facebook.com"><img class="contact__img contact__img--facebook"
+                src="./images/facebook-f-brands.svg" alt="facebook logo"></a>
+          </li>
+        </ul>
+        <div class="contact__adress">
+          <span class="contact__span contact__span--name">Marek Michalski</span>
+          <span class="contact__span contact__span--city">Poland, Poznań</span>
+          <span class="contact__span">ul. Losowa 13/9 11-111</span>
+          <spam class="contact__span">+48 787 207 044</spam>
+          <spam class="contact__span">michalskimarek89@gmail.com</spam>
+        </div>
       </div>
-      <ul class="contact__social">
-        <li class="contact__icon">tw</li>
-        <li class="contact__icon">in</li>
-        <li class="contact__icon">git</li>
-        <li class="contact__icon">fb</li>
-      </ul>
-      <div class="contact__adress">
-        <span class="contact__span contact-form__span--name">Marek Michalski</span>
-        <span class="contact__span contact-form__span--city">Poland, Poznań</span>
-        <span class="contact__span">ul. Losowa 13/9 11-111</span>
-        <spam class="contact__span">+48 787 207 044</spam>
-        <spam class="contact__span">michalskimarek89@gmail.com</spam>
+      <div class="contact-form">
+        <h2 class="contact-form__title">Let's start!</h2>
+        <form class="contact-form__form" action="">
+          <input class="contact-form__input" type="text" />
+          <input class="contact-form__input" type="email" name="" id="" />
+          <input class="contact-form__input" type="text" />
+          <textarea class="contact-form__input contact-form__input--textarea  " name="" id="" cols="30"
+            rows="10"></textarea>
+          <button class="contact-form__btn">Send</button>
+        </form>
       </div>
     </div>
-    <div class="contact-form">
-      <h2 class="contact-form__title">Let's start!</h2>
-      <form class="contact-form__form" action="">
-        <input class="contact-form__input" type="text" />
-        <input class="contact-form__input" type="email" name="" id="" />
-        <input class="contact-form__input" type="text" />
-        <textarea class="contact-form__input contact-form__input--textarea  " name="" id="" cols="30"
-          rows="10"></textarea>
-        <button class="contact-form__btn">Send</button>
-      </form>
-    </div>
+
   </section>
   <footer class="footer">
     Copyright &copy; 2019 CodersCrew

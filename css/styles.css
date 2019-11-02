@@ -73,7 +73,8 @@
   list-style-type: none;
   justify-content: center; }
 
-.page-header__link {
+.page-header__link,
+.page-header .contact__link {
   width: 25px;
   height: 25px;
   background-color: #ffffff;
@@ -82,31 +83,44 @@
   border-radius: 50%;
   position: relative; }
 
-.page-header__link--github {
+.page-header__link--github,
+.page-header__link .contact__link--github,
+.page-header .contact__link--github,
+.page-header .contact__link .contact__link--github {
   background-color: transparent; }
 
-.page-header__img--twitter {
+.page-header__img--twitter,
+.page-header .contact__img--twitter {
   width: 15.39px;
   height: 12.5px;
   position: absolute;
   top: 6.5px;
   left: 5px; }
 
-.page-header__img--linkedin {
+.page-header__img--linkedin,
+.page-header__img .contact__img--linkedin,
+.page-header .contact__img--linkedin,
+.page-header .contact__img .contact__img--linkedin {
   width: 12.5px;
   height: 12.5px;
   position: absolute;
   top: 5.5px;
   left: 7px; }
 
-.page-header__img--github {
+.page-header__img--github,
+.page-header__img .contact__img--github,
+.page-header .contact__img--github,
+.page-header .contact__img .contact__img--github {
   width: 25px;
   height: 25px;
   position: absolute;
   top: 0;
   left: 0; }
 
-.page-header__img--facebook {
+.page-header__img--facebook,
+.page-header__img .contact__img--facebook,
+.page-header .contact__img--facebook,
+.page-header .contact__img .contact__img--facebook {
   width: 8.59px;
   height: 16.67px;
   position: absolute;
@@ -278,6 +292,9 @@
   color: #ffc53d;
   margin: 46px 0 13px 0; }
 
+.portfolio {
+  margin-bottom: 72px; }
+
 .portfolio__title {
   font-weight: bold;
   font-size: 32px;
@@ -374,3 +391,120 @@
   line-height: 21px;
   border: none;
   visibility: hidden; }
+
+.contact {
+  width: 100%;
+  background-color: #fafaff;
+  position: relative;
+  padding: 1px 0 1px 0; }
+
+.contact__title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #222222;
+  position: absolute;
+  top: -55px;
+  left: 55px; }
+
+.contact__container {
+  width: 86vw;
+  background-color: #ffffff;
+  margin: 74px auto 90px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+  display: flex; }
+
+.contact__envelope {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 25px; }
+
+.contact__text {
+  width: 75%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 172.35%;
+  letter-spacing: 0.04em;
+  margin-bottom: 206px; }
+
+.contact__social {
+  list-style-type: none;
+  display: flex; }
+
+.contact__info {
+  width: 35%;
+  background-color: #ff9a3d;
+  color: #ffffff;
+  padding: 36px 0 36px 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative; }
+
+.contact__info::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -17px;
+  width: 35px;
+  height: 35px;
+  transform: rotate(45deg);
+  background-color: #ff9a3d; }
+
+.contact__link {
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin: 0 25px 9px 0;
+  border-radius: 50%;
+  position: relative; }
+
+.contact__link--github {
+  background-color: transparent; }
+
+.contact__img--twitter {
+  width: 15.39px;
+  height: 12.5px;
+  position: absolute;
+  top: 6.5px;
+  left: 5px; }
+
+.contact__img--linkedin {
+  width: 12.5px;
+  height: 12.5px;
+  position: absolute;
+  top: 5.5px;
+  left: 7px; }
+
+.contact__img--github {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.contact__img--facebook {
+  width: 8.59px;
+  height: 16.67px;
+  position: absolute;
+  top: 4.5px;
+  left: 8px; }
+
+.contact__adress {
+  display: flex;
+  flex-direction: column;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em; }
+
+.contact__span--name, .contact__span--city {
+  font-weight: bold; }
