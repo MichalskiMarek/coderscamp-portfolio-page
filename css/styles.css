@@ -508,3 +508,18 @@
 
 .contact__span--name, .contact__span--city {
   font-weight: bold; }
+
+.footer {
+  display: flex;
+  justify-content: center; }
+
+.footer__span {
+  padding: 34px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a0a0a0; }
