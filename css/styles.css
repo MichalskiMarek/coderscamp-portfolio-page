@@ -549,6 +549,10 @@
   padding: 12px 24px;
   resize: none; }
 
+.contact-form__input:focus {
+  outline: none;
+  box-shadow: inset 0px 5px 5px 0px #b5b5b5; }
+
 .contact-form__input::placeholder {
   font-family: Ubuntu;
   font-style: normal;
