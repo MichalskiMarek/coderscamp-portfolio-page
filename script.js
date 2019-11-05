@@ -7,3 +7,4 @@ const handleClick = () => {
 };
 
 hamburger.addEventListener("click", handleClick);
+nav.addEventListener("click", handleClick);
