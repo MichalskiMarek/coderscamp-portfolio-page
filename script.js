@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const elements = [
-    document.querySelector(".hamburger"),
-    document.querySelector(".menu__container")
-  ];
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector(".menu__container");
+  const body = document.body;
+  const elements = [hamburger, nav];
 
   const handleClick = () => {
-    elements[0].classList.toggle("hamburger--active");
-    elements[1].classList.toggle("menu__container--active");
+    body.style.overflow = body.style.overflow === "" ? "hidden" : "";
+    hamburger.classList.toggle("hamburger--active");
+    nav.classList.toggle("menu__container--active");
   };
 
   elements.forEach(element => {
