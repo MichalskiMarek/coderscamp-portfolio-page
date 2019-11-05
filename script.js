@@ -1,10 +1,15 @@
-const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".menu__container");
-console.log(document);
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = [
+    document.querySelector(".hamburger"),
+    document.querySelector(".menu__container")
+  ];
 
-const handleClick = () => {
-  hamburger.classList.toggle("hamburger--active");
-  nav.classList.toggle("menu__container--active");
-};
+  const handleClick = () => {
+    elements[0].classList.toggle("hamburger--active");
+    elements[1].classList.toggle("menu__container--active");
+  };
 
-hamburger.addEventListener("click", handleClick);
+  elements.forEach(element => {
+    element.addEventListener("click", handleClick);
+  });
+});
