@@ -796,7 +796,7 @@
     position: fixed;
     height: 100vh;
     width: 250px;
-    top: 100px;
+    top: 114px;
     right: 0;
     background-color: #ffffff;
     transform: translateX(250px);
@@ -891,4 +891,14 @@
 
 .menu__container--active {
   transform: translateX(0);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 154, 61, 0.5);
+  }
 }
